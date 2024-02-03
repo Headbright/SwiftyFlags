@@ -14,7 +14,9 @@ const experimentalFeatures = data.flags.filter(f => f.versions.includes(neededVe
 
 </script>
 
-# Flags for Swift {{ neededVersion }}
+# Feature flags
+
+Swift compiler version `{{ neededVersion }}`
 
 In code, `#if hasFeature(FeatureName)` can be used to evaluate if a specific feature is available:
 
@@ -40,7 +42,7 @@ A compiler flag is available to enable specific features `-enable-upcoming-featu
 ```
 
 <div v-for="flag of upcomingFeatures">
-        <h3>{{ flag.name }}</h3>
+        <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
     </div>
 
 ## Experimental
@@ -56,12 +58,12 @@ A compiler flag is available to enable specific features `-enable-experimental-f
 ```
 
 <div v-for="flag of experimentalFeatures">
-        <h3>{{ flag.name }}</h3>
+        <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
     </div>
 
 ## Stable
 
 <div v-for="flag of languageFeatures">
-    <h3>{{ flag.name }}</h3>
+    <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
     <p>{{ flag.descriptions.filter(d => d.v === neededVersion)[0]?.value }}</p>
 </div>
