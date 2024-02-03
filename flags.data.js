@@ -105,7 +105,7 @@ export default {
         return acc;
       }, {});
     const list = Object.values(groupedFeatures);
-    console.log(list);
+    // console.log(list);
     return {
       flags: list,
     };
