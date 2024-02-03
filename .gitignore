@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+*.cpuprofile
+*.local
+*.log
+/.vscode/
+/.vitepress/cache
+/packages/vite/LICENSE
+dist
+dist-ssr
+explorations
+node_modules
+playground-temp
+temp
+TODOs.md
+.eslintcache
