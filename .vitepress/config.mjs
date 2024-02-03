@@ -30,7 +30,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/SwiftyThemes/SwiftyFlags" },
+      { icon: "github", link: "https://github.com/Headbright/SwiftyFlags" },
     ],
     footer: {
       message: "For feedback, please open a GitHub issue.",
