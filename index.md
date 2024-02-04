@@ -31,9 +31,9 @@ features:
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #F05137);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #F05137 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
@@ -53,4 +53,8 @@ features:
 <aside data-fbb-feedback="94aba706-e846-4be0-87fe-c1367d069155"
 data-fbb-widget:title="Get in touch"
 data-fbb-widget:text-placeholder="Message"
+data-fbb-widget:primary-color="#F05137"
+data-fbb-widget:primary-dark-color="#F05137"
+data-fbb-widget:hover-dark-color="#F69787"
+data-fbb-widget:hover-color="#F69787"
 />
