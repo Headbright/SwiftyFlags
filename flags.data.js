@@ -92,7 +92,7 @@ export default {
             types: [],
             versions: [],
             descriptions: [],
-            docsUrl: `https://github.com/search?q=repo%3Aapple%2Fswift-evolution%20${key}&type=code`,
+            docsUrl: `https://www.swift.org/swift-evolution/#?search=${key}`,
           };
         }
         if (!acc[key].versions.includes(obj.version)) {

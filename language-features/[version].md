@@ -42,8 +42,9 @@ A compiler flag is available to enable specific features `-enable-upcoming-featu
 ```
 
 <div v-for="flag of upcomingFeatures">
-        <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
-    </div>
+    <h3>{{ flag.name }}</h3>
+    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
+</div>
 
 ## Experimental
 
@@ -58,12 +59,14 @@ A compiler flag is available to enable specific features `-enable-experimental-f
 ```
 
 <div v-for="flag of experimentalFeatures">
-        <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
-    </div>
+    <h3>{{ flag.name }}</h3>
+    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
+</div>
 
 ## Stable
 
 <div v-for="flag of languageFeatures">
-    <a :href="flag.docsUrl" target="_bank"><h3>{{ flag.name }}</h3></a>
+    <h3>{{ flag.name }}</h3>
+    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
     <p>{{ flag.descriptions.filter(d => d.v === neededVersion)[0]?.value }}</p>
 </div>
