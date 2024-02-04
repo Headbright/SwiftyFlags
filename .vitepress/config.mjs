@@ -44,6 +44,42 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "theme-color", content: "#ffffff" }],
+    ["meta", { property: "og:type", content: "website" }],
+    ["meta", { property: "og:locale", content: "en" }],
+    [
+      "meta",
+      {
+        property: "og:title",
+        content: "SwiftyFlags | Swift compiler flags reference",
+      },
+    ],
+    ["meta", { property: "og:site_name", content: "SwiftyFlags" }],
+    [
+      "meta",
+      {
+        property: "og:image",
+        content: "https://flags.swiftythemes.com/opengraph.jpeg",
+      },
+    ],
+    [
+      "meta",
+      { property: "og:url", content: "https://flags.swiftythemes.com/" },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.feedbackbulb.com/packages/web-v1.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.feedbackbulb.com/packages/web-v1.js",
+        type: "text/javascript",
+        defer: "",
+      },
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
