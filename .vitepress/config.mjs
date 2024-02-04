@@ -80,6 +80,13 @@ export default defineConfig({
         defer: "",
       },
     ],
+    [
+      "script",
+      {
+        src: "https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js",
+        [`data-app-id`]: "9F801353-5EF3-45BA-B6B7-5493E5841EF9",
+      },
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -119,7 +126,7 @@ export default defineConfig({
     footer: {
       message: "For feedback, please open a GitHub issue.",
       copyright:
-        "Created by <a href='https://github.com/kkostov'>Konstantin</a>",
+        "Created by <a href='https://github.com/kkostov'>Konstantin</a> under BSD 3-Clause License",
     },
   },
 });
