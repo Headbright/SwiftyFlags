@@ -8,4 +8,4 @@ The way it works is by periodically scraping the Swift source repository, lookin
 
 ## Contributions
 
-Contributions are more than welcome - both issues and PRs are welcome.
+Contributions are more than welcome! 🤗
