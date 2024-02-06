@@ -14,32 +14,9 @@ const experimentalFeatures = data.flags.filter(f => f.versions.includes(neededVe
 
 </script>
 
-# Feature flags
-
-Swift compiler version `{{ neededVersion }}`
-
-In code, `#if hasFeature(FeatureName)` can be used to evaluate if a specific feature is available:
-
-```swift
-#if hasFeature(StrictConcurrency)
-#endif
-```
-
-Upcoming and experimental features can be enabled individually as build settings.
-
-See [Proposa SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md) for more details.
+# Feature flags `{{ neededVersion }}`
 
 ## Upcoming
-
-A compiler flag is available to enable specific features `-enable-upcoming-feature FeatureName`. In SPM, features can be enabled in `Package.swift` using the `enableUpcomingFeature` setting:
-
-```swift
-.target(
-    name: "TargetName",
-    swiftSettings: [
-        .enableUpcomingFeature("FeatureName")
-        ])
-```
 
 <div v-for="flag of upcomingFeatures">
     <h3>{{ flag.name }}</h3>
@@ -47,16 +24,6 @@ A compiler flag is available to enable specific features `-enable-upcoming-featu
 </div>
 
 ## Experimental
-
-A compiler flag is available to enable specific features `-enable-experimental-feature FeatureName`. In SPM, features can be enabled in `Package.swift` using the `enableExperimentalFeature` setting:
-
-```swift
-.target(
-    name: "TargetName",
-    swiftSettings: [
-        .enableExperimentalFeature("FeatureName")
-        ])
-```
 
 <div v-for="flag of experimentalFeatures">
     <h3>{{ flag.name }}</h3>

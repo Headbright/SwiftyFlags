@@ -105,16 +105,11 @@ export default defineConfig({
       { text: "Home", link: "/" },
       // { text: 'Examples', link: '/markdown-examples' }
     ],
-
-    // search: {
-    //   provider: 'algolia',
-    //   options: {
-    //     appId: '...',
-    //     apiKey: '...',
-    //     indexName: '...'
-    //   }
-    // },
     sidebar: [
+      {
+        text: "How-to",
+        link: "/howto",
+      },
       {
         text: "by Swift Version",
         items: versions,
