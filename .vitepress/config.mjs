@@ -90,9 +90,14 @@ export default defineConfig({
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    // search: {
-    //   provider: "local",
-    // },
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "QBSOKNFK8H",
+        apiKey: "206be92ec88616940f6722493106cc25",
+        indexName: "flags-swiftythemes",
+      },
+    },
     logo: "/logo.png",
     lastUpdated: true,
     cleanUrls: true,
