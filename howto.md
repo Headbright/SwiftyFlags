@@ -1,13 +1,15 @@
 # How-to
 
-`#if hasFeature(FeatureName)` can be used to evaluate if a specific feature is available:
+Some features are available directly as Xcode Build Settings while others can be passed as build command line arguments or settings in a Swift Package Manager `Package.swift` file.
+
+![Xcode Build Settings named Strict Concurrency Checking](./assets/xcode-concurrency.png)
+
+Programatically, it's possible to determine if a feature is available using the `#if` directive:
 
 ```swift
 #if hasFeature(StrictConcurrency)
 #endif
 ```
-
-Upcoming and experimental features can be enabled individually as build settings.
 
 See [Proposa SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md) for more details.
 

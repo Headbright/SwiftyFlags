@@ -19,21 +19,23 @@ const experimentalFeatures = data.flags.filter(f => f.versions.includes(neededVe
 ## Upcoming
 
 <div v-for="flag of upcomingFeatures">
-    <h3>{{ flag.name }}</h3>
-    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
+    <h3 :id="flag.name">{{ flag.name }}</h3>
+    <div><a href="/howto#upcoming" target="_blank">📖 Howto</a></div>
+    <div><a :href="flag.docsUrl" target="_blank">🔍 Mentions in proposals</a></div>
 </div>
 
 ## Experimental
 
-<div v-for="flag of experimentalFeatures">
+<div v-for="flag of experimentalFeatures" class="feature">
     <h3>{{ flag.name }}</h3>
-    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
+     <div><a href="/howto#experimental" target="_blank">📖 Howto</a></div>
+     <div><a :href="flag.docsUrl" target="_blank">🔍 Mentions in proposals</a></div>
 </div>
 
 ## Stable
 
 <div v-for="flag of languageFeatures">
     <h3>{{ flag.name }}</h3>
-    <a :href="flag.docsUrl" target="_bank">🔍 Mentions in proposals</a>
+    <a :href="flag.docsUrl" target="_blank">🔍 Mentions in proposals</a>
     <p>{{ flag.descriptions.filter(d => d.v === neededVersion)[0]?.value }}</p>
 </div>

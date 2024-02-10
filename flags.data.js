@@ -1,5 +1,9 @@
 const versions = [
   {
+    id: "5.10",
+    url: "https://raw.githubusercontent.com/apple/swift/release/5.10/include/swift/Basic/Features.def",
+  },
+  {
     id: "5.9",
     url: "https://raw.githubusercontent.com/apple/swift/swift-5.9.2-RELEASE/include/swift/Basic/Features.def",
   },

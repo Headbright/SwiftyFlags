@@ -7,6 +7,9 @@ hero:
   text: "Swift language features flags"
   # tagline: What are you going to build today?
   actions:
+    - theme: alt
+      text: Swift 5.10 (beta)
+      link: /language-features/5.10
     - theme: brand
       text: Swift 5.9
       link: /language-features/5.9
