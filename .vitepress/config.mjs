@@ -124,7 +124,8 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/Headbright/SwiftyFlags" },
     ],
     footer: {
-      message: "For feedback, please open a GitHub issue.",
+      message:
+        "For feedback, please open a <a href='https://github.com/Headbright/SwiftyFlags'>GitHub</a> issue.",
       copyright:
         "Created by <a href='https://github.com/kkostov'>Konstantin</a> under BSD 3-Clause License",
     },
