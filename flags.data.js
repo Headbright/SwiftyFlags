@@ -21,6 +21,19 @@ const versions = [
   },
 ];
 
+/// Extra links to be added to specific features
+const extraLinks = [
+  {
+    feature: "StrictConcurrency",
+    links: [
+      {
+        title: "How to determine where tasks and async functions run in Swift?",
+        url: "https://www.donnywals.com/how-to-determine-where-tasks-and-async-functions-run-in-swift/?utm_source=swiftyflags",
+      },
+    ],
+  },
+];
+
 const regexLanguageFeature = /(?<=LANGUAGE_FEATURE\()[^,]+(?=,)|"([^"]+)"/gm;
 const regexUpcomingFeature = /(?<=UPCOMING_FEATURE\()[^,]+(?=,)/gm;
 const regexExperimentalFeature = /(?<=EXPERIMENTAL_FEATURE\()[^,]+(?=,)/gm;
@@ -53,7 +66,8 @@ export default {
             }
             return null;
           })
-          .filter((f) => f !== null);
+          .filter((f) => f !== null)
+          .sort((a, b) => a.name.localeCompare(b.name));
 
         // UPCOMING_FEATURE(...
         const upcomingFeatureMatches = text.match(regexUpcomingFeature);
@@ -65,7 +79,8 @@ export default {
               version: v.id,
             };
           })
-          .flat();
+          .flat()
+          .sort((a, b) => a.name.localeCompare(b.name));
 
         // EXPERIMENTAL_FEATURE(...
         const experimentalFeatureMatches = text.match(regexExperimentalFeature);
@@ -77,7 +92,8 @@ export default {
               version: v.id,
             };
           })
-          .flat();
+          .flat()
+          .sort((a, b) => a.name.localeCompare(b.name));
 
         return languageFeatures
           .concat(upcomingFeatures)
@@ -109,8 +125,15 @@ export default {
         }
         return acc;
       }, {});
-    const list = Object.values(groupedFeatures);
-    // console.log(list);
+    const list = Object.values(groupedFeatures).map((f) => {
+      const extraLink = extraLinks.find((el) => el.feature === f.name);
+      if (extraLink) {
+        f.extraLinks = extraLink.links;
+      } else {
+        f.extraLinks = [];
+      }
+      return f;
+    });
     return {
       flags: list,
     };
