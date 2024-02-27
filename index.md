@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SwiftyFlags"
-  text: "Swift language features flags"
+  text: "Swift language feature flags"
   # tagline: What are you going to build today?
   actions:
     - theme: alt
