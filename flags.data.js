@@ -30,6 +30,14 @@ const extraLinks = [
         title: "How to determine where tasks and async functions run in Swift?",
         url: "https://www.donnywals.com/how-to-determine-where-tasks-and-async-functions-run-in-swift/?utm_source=swiftyflags",
       },
+      {
+        title: "The Swift Book: Concurrency",
+        url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      },
+      {
+        title: "More related proposals",
+        url: "https://www.swift.org/swift-evolution/#?search=Concurrency",
+      },
     ],
   },
 ];
@@ -98,7 +106,7 @@ export default {
         return languageFeatures
           .concat(upcomingFeatures)
           .concat(experimentalFeatures);
-      })
+      }),
     );
 
     const groupedFeatures = remoteFeatures
