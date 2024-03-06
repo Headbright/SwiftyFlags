@@ -1,7 +1,7 @@
 const versions = [
   {
     id: "5.10",
-    url: "https://raw.githubusercontent.com/apple/swift/release/5.10/include/swift/Basic/Features.def",
+    url: "https://raw.githubusercontent.com/apple/swift/swift-5.10-RELEASE/include/swift/Basic/Features.def",
   },
   {
     id: "5.9",
@@ -27,8 +27,8 @@ const extraLinks = [
     feature: "StrictConcurrency",
     links: [
       {
-        title: "How to determine where tasks and async functions run in Swift?",
-        url: "https://www.donnywals.com/how-to-determine-where-tasks-and-async-functions-run-in-swift/?utm_source=swiftyflags",
+        title: "Data-race safety in Swift 5.10",
+        url: "https://www.swift.org/blog/swift-5.10-released/#data-race-safety-in-swift-510",
       },
       {
         title: "The Swift Book: Concurrency",
@@ -37,6 +37,10 @@ const extraLinks = [
       {
         title: "More related proposals",
         url: "https://www.swift.org/swift-evolution/#?search=Concurrency",
+      },
+      {
+        title: "How to determine where tasks and async functions run in Swift?",
+        url: "https://www.donnywals.com/how-to-determine-where-tasks-and-async-functions-run-in-swift/?utm_source=swiftyflags",
       },
     ],
   },
@@ -106,7 +110,7 @@ export default {
         return languageFeatures
           .concat(upcomingFeatures)
           .concat(experimentalFeatures);
-      }),
+      })
     );
 
     const groupedFeatures = remoteFeatures
