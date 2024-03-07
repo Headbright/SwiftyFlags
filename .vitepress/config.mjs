@@ -130,4 +130,9 @@ export default defineConfig({
         "Created by <a href='https://github.com/kkostov'>Konstantin</a> under BSD 3-Clause License",
     },
   },
+  transformPageData(pageData) {
+    if (pageData.title === "Feature flags {{ neededVersion }}") {
+      pageData.title = `Feature flags ${pageData.params.version}`;
+    }
+  },
 });
