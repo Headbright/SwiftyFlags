@@ -27,16 +27,16 @@ const extraLinks = [
     feature: "StrictConcurrency",
     links: [
       {
+        title: "An Introduction to Isolation in Swift",
+        url: "https://www.massicotte.org/intro-to-isolation",
+      },
+      {
         title: "Data-race safety in Swift 5.10",
         url: "https://www.swift.org/blog/swift-5.10-released/#data-race-safety-in-swift-510",
       },
       {
         title: "The Swift Book: Concurrency",
         url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
-      },
-      {
-        title: "More related proposals",
-        url: "https://www.swift.org/swift-evolution/#?search=Concurrency",
       },
       {
         title: "How to determine where tasks and async functions run in Swift?",
