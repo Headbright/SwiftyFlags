@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 
-const versions = ["5.10", "5.9", "5.8", "5.7"].map((v) => {
+const versions = ["6.0", "5.10", "5.9", "5.8", "5.7"].map((v) => {
   return { text: v, link: `/language-features/${v}` };
 });
 
