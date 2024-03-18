@@ -11,6 +11,9 @@ hero:
       text: Swift 5.10
       link: /language-features/5.10
     - theme: alt
+      text: Swift 6.0 (unreleased)
+      link: /language-features/6.0
+    - theme: alt
       text: Swift 5.9
       link: /language-features/5.9
     - theme: alt
