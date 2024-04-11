@@ -127,7 +127,7 @@ export default defineConfig({
       message:
         "For feedback, please open a <a href='https://github.com/Headbright/SwiftyFlags'>GitHub</a> issue.",
       copyright:
-        "Created by <a href='https://github.com/kkostov'>Konstantin</a> under BSD 3-Clause License",
+        "Created by <a href='https://iamkonstantin.eu/'>Konstantin</a> under BSD 3-Clause License",
     },
   },
   transformPageData(pageData) {
