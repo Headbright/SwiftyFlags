@@ -8,17 +8,11 @@ hero:
   # tagline: What are you going to build today?
   actions:
     - theme: brand
-      text: Swift 5.10
-      link: /language-features/5.10
+      text: Swift 6.1.2
+      link: /language-features/6.1.2
     - theme: alt
-      text: Swift 6.0 (unreleased)
-      link: /language-features/6.0
-    - theme: alt
-      text: Swift 5.9
-      link: /language-features/5.9
-    - theme: alt
-      text: Swift 5.8
-      link: /language-features/5.8
+      text: Swift 6.2-2025-06-14 (unreleased)
+      link: /language-features/6.2-2025-06-14
   image:
     src: /swiftyflags.webp
     alt: SwiftyFlags

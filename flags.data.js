@@ -1,5 +1,13 @@
 const versions = [
   {
+    id: "6.2-2025-06-14",
+    url: "https://raw.githubusercontent.com/apple/swift/6.2-snapshot-2025-06-14/include/swift/Basic/Features.def",
+  },
+  {
+    id: "6.1.2",
+    url: "https://raw.githubusercontent.com/apple/swift/swift-6.1.2-RELEASE/include/swift/Basic/Features.def",
+  },
+  {
     id: "6.0",
     url: "https://raw.githubusercontent.com/apple/swift/release/6.0/include/swift/Basic/Features.def",
   },
