@@ -6,6 +6,6 @@
   },
   "devDependencies": {
     "minisearch": "^6.3.0",
-    "vitepress": "^1.0.0-rc.41"
+    "vitepress": "^1.6.3"
   }
 }
