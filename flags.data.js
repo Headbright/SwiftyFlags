@@ -1,7 +1,11 @@
 const versions = [
   {
-    id: "6.2-2025-06-14",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-6.2-DEVELOPMENT-SNAPSHOT-2025-06-14-a/include/swift/Basic/Features.def",
+    id: "6.3",
+    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-6.3-DEVELOPMENT-SNAPSHOT-2026-01-09-a/include/swift/Basic/Features.def",
+  },
+  {
+    id: "6.2",
+    url: "https://raw.githubusercontent.com/swiftlang/swift/refs/tags/swift-6.2-RELEASE/include/swift/Basic/Features.def",
   },
   {
     id: "6.1.2",
@@ -14,22 +18,6 @@ const versions = [
   {
     id: "5.10",
     url: "https://raw.githubusercontent.com/apple/swift/swift-5.10-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "5.9",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-5.9.2-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "5.8",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-5.8.1-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "5.7",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-5.7.3-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "5.6",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-5.6.3-RELEASE/include/swift/Basic/Features.def",
   },
 ];
 
@@ -122,7 +110,7 @@ export default {
         return languageFeatures
           .concat(upcomingFeatures)
           .concat(experimentalFeatures);
-      })
+      }),
     );
 
     const groupedFeatures = remoteFeatures
