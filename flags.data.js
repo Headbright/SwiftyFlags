@@ -1,25 +1,4 @@
-const versions = [
-  {
-    id: "6.3",
-    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-6.3-DEVELOPMENT-SNAPSHOT-2026-01-09-a/include/swift/Basic/Features.def",
-  },
-  {
-    id: "6.2",
-    url: "https://raw.githubusercontent.com/swiftlang/swift/refs/tags/swift-6.2-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "6.1.2",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-6.1.2-RELEASE/include/swift/Basic/Features.def",
-  },
-  {
-    id: "6.0",
-    url: "https://raw.githubusercontent.com/apple/swift/release/6.0/include/swift/Basic/Features.def",
-  },
-  {
-    id: "5.10",
-    url: "https://raw.githubusercontent.com/apple/swift/swift-5.10-RELEASE/include/swift/Basic/Features.def",
-  },
-];
+import { versions } from "./versions.js";
 
 /// Extra links to be added to specific features
 const extraLinks = [
@@ -39,8 +18,35 @@ const extraLinks = [
         url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
       },
       {
-        title: "How to determine where tasks and async functions run in Swift?",
-        url: "https://www.donnywals.com/how-to-determine-where-tasks-and-async-functions-run-in-swift/?utm_source=swiftyflags",
+        title: "An Approachable Guide to Swift Concurrency",
+        url: "https://fuckingapproachableswiftconcurrency.com/en/",
+      },
+    ],
+  },
+  {
+    feature: "NonisolatedNonsendingByDefault",
+    links: [
+      {
+        title: "Swift Diagnostics: nonisolated(nonsending) by Default",
+        url: "https://docs.swift.org/latest/documentation/diagnostics/nonisolated-nonsending-by-default/",
+      },
+    ],
+  },
+  {
+    feature: "MemberImportVisibility",
+    links: [
+      {
+        title: "Swift Diagnostics: Member Import Visibility",
+        url: "https://docs.swift.org/latest/documentation/diagnostics/member-import-visibility/",
+      },
+    ],
+  },
+  {
+    feature: "ExistentialAny",
+    links: [
+      {
+        title: "Swift Diagnostics: Existential any",
+        url: "https://docs.swift.org/latest/documentation/diagnostics/existential-any/",
       },
     ],
   },

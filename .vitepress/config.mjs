@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
+import { versionIds } from "../versions.js";
 
-const versions = ["6.3", "6.2", "6.1.2", "6.0", "5.10"].map((v) => {
+const versionLinks = versionIds.map((v) => {
   return { text: v, link: `/language-features/${v}` };
 });
 
@@ -112,7 +113,7 @@ export default defineConfig({
       },
       {
         text: "by Swift Version",
-        items: versions,
+        items: versionLinks,
       },
     ],
 
