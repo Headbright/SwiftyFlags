@@ -2,8 +2,12 @@
 /// `id` is used in the URL path, `url` points at that toolchain's Features.def.
 export const versions = [
   {
+    id: "6.5",
+    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-DEVELOPMENT-SNAPSHOT-2026-09-10-a/include/swift/Basic/Features.def",
+  },
+  {
     id: "6.4",
-    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-09-01-a/include/swift/Basic/Features.def",
+    url: "https://raw.githubusercontent.com/swiftlang/swift/refs/tags/swift-6.4.0-RELEASE/include/swift/Basic/Features.def",
   },
   {
     id: "6.3",
