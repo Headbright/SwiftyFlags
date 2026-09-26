@@ -11,7 +11,7 @@ hero:
       text: Swift 6.4
       link: /language-features/6.4
     - theme: alt
-      text: Swift 6.5 (Unreleased, 2026-09-10)
+      text: Swift 6.5 (Unreleased, 2026-09-21)
       link: /language-features/6.5
   image:
     src: /swiftyflags.webp

@@ -3,7 +3,7 @@
 export const versions = [
   {
     id: "6.5",
-    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-DEVELOPMENT-SNAPSHOT-2026-09-10-a/include/swift/Basic/Features.def",
+    url: "https://raw.githubusercontent.com/swiftlang/swift/swift-DEVELOPMENT-SNAPSHOT-2026-09-21-a/include/swift/Basic/Features.def",
   },
   {
     id: "6.4",
